@@ -1,5 +1,5 @@
 exports.run = async (client, message, args) => {
-    let target = message.mentions.users.first() || message.author || message.member.user.tag;
+    let target = message.mentions.users.first() || message.author || member.user.tag;
     let embed = new Discord.RichEmbed()
         .setThumbnail(target.avatarURL)
         .setAuthor(target.username)
