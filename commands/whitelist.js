@@ -15,7 +15,7 @@ exports.run = async (client, message, args, level) => {
         
         let whitelistchannel = message.guild.channels.find(`name`, "whitelist-requests");
         whitelistchannel.send(whitelistEmbed);
-        message.reply("Thank you for sending your whitelist request! It is currently being reviewed by our staff. Hang on while as we process your request.")
+        message.reply("Thank you for sending your whitelist request! It is currently being reviewed by our staff. Hang on while we process your request.")
         message.react("✅")
 }
 
