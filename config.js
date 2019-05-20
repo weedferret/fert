@@ -1,6 +1,6 @@
 exports.config = {
 	// Bot token, DO NOT SHARE
-	token: "",
+	token: "NTc0NjU1OTc3NzE5MDcwNzI5.XOLDtA.V0k1kwDvXz23Pp4LU_4EIqtP7YQ",
 
 	//	Whether to log debug info
 	debug: false,
