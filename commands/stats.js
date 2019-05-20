@@ -8,13 +8,13 @@ try{
         .setTitle("Bot Information")
         .setColor(Math.floor(Math.random() * 16777214) + 1)
         .setThumbnail(bicon)
-          .addField("Bot member size", bot.users.size)
-          .addField("Bot guild size", bot.guilds.size)
+          .addField("Bot member size", bot.users.size, true)
+          .addField("Bot guild size", bot.guilds.size, true)
           .addField("RAM usage", `${((process.memoryUsage().heapUsed / 1024) / 1024).toFixed(2)} MB`)
           .addField("Created on", bot.user.createdAt)
           .addField("Developed by", "obscvre#7124")
-          .addField("Discord version", `${Discord.version}`)
-          .addField("Node version", `${process.version}`);
+          .addField("Discord version", `${Discord.version}`, true)
+          .addField("Node version", `${process.version}`, true);
         message.channel.send(bembed);
     }
 }catch(e){

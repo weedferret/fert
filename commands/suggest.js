@@ -7,10 +7,10 @@ try{
     let suggestEmbed = new Discord.RichEmbed()
     .setDescription("Suggestion")
     .setColor("#bf7fbf")
-    .addField("Suggestion By", `${message.author} with ID: ${message.author.id}`)
-    .addField("Channel", message.channel)
-    .addField("Time", message.createdAt)
-    .addField("Suggestion", suggestion);
+    .addField("Suggestion By", `${message.author}`, true)
+    .addField("Channel", message.channel, true)
+    .addField("Suggestion", suggestion)
+    .setTimestamp();
 
 let suggestionchannel = message.guild.channels.find(`name`, "suggestions");
     if(!suggestionchannel) return message.channel.send("Couldn't find the suggestions channel. Do I have permissions to view this channel?");

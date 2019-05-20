@@ -1,5 +1,5 @@
 exports.run = async (client, message, args, level) => {
-    if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
+    if(!message.member.roles.some(r=>["Staff"].includes(r.name)) )
       return message.reply("You are missing the permission `KICK_MEMBERS` and cannot use this command.");
     
     let member = message.mentions.members.first() || message.guild.members.get(args[0]);

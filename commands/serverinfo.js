@@ -4,10 +4,10 @@ exports.run = async (client, message, args, level) => {
     let serverembed = new Discord.RichEmbed()
     .setColor("RANDOM")
     .setThumbnail(sicon)
-    .addField("Server Name", message.guild.name)
+    .addField("Server Name", message.guild.name, true)
+    .addField("Total Members", message.guild.memberCount, true)
     .addField("Created On", message.guild.createdAt)
-    .addField("You Joined", message.member.joinedAt)
-    .addField("Total Members", message.guild.memberCount);
+    .addField("You Joined", message.member.joinedAt);
     
     message.channel.send(serverembed);};
 

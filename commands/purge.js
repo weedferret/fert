@@ -1,5 +1,5 @@
 exports.run = async (client, message, args, level) => {
-        if (!message.member.roles.exists('name', 'Administrator')) return;
+        if (!message.member.roles.exists('name', 'Staff')) return;
         const deleteCount = parseInt(args[0], 10);
         
         if(!deleteCount || deleteCount < 2 || deleteCount > 100)
